@@ -1,6 +1,13 @@
 import { Menu } from "antd";
 import { FaRegFileAlt } from "react-icons/fa";
 import { LuBox } from "react-icons/lu";
+import { FaRegBookmark, FaRegMap } from "react-icons/fa6";
+import { MdBarChart } from "react-icons/md";
+import { LuLayoutGrid } from "react-icons/lu";
+import { GoShareAndroid } from "react-icons/go";
+import { HiOutlineChip } from "react-icons/hi";
+import { FiGift } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const AllMenus = () => {
   return (
@@ -10,10 +17,11 @@ const AllMenus = () => {
           {
             key: "1",
             icon: <FaRegFileAlt />,
-            label: "Pages",
+            label: <Link to="advancedTables"> Pages</Link>,
           },
         ]}
       />
+      <hr />
       <Menu
         items={[
           {
@@ -23,37 +31,37 @@ const AllMenus = () => {
           },
           {
             key: "2",
-            icon: <LuBox />,
+            icon: <FiGift />,
             label: "Widgets",
           },
           {
             key: "3",
-            icon: <LuBox />,
+            icon: <HiOutlineChip />,
             label: "Icons",
           },
           {
             key: "4",
-            icon: <LuBox />,
+            icon: <FaRegBookmark />,
             label: "Forms",
           },
           {
             key: "5",
-            icon: <LuBox />,
+            icon: <MdBarChart />,
             label: "Charts",
           },
           {
             key: "6",
-            icon: <LuBox />,
+            icon: <LuLayoutGrid />,
             label: "Tables",
           },
           {
             key: "7",
-            icon: <LuBox />,
+            icon: <FaRegMap />,
             label: "Maps",
           },
           {
             key: "8",
-            icon: <LuBox />,
+            icon: <GoShareAndroid />,
             label: "Menu Levels",
           },
         ]}
